@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #d6d3a8;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto, sans-serif;
+  }
+  .card {
+    width: 50%;
+    position: relative;
+    height: 30%;
+    margin-top: 50px;
+    max-height: 150px;
+    min-height: 100px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 36px 28px rgba(209, 213, 223, 0.3);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    cursor: pointer;
+  }
+  .card .content{
+    text-align: center;
+    margin: 0 auto;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+  }
+  .card a {
+    position: relative;
+    font-size: 1.4rem;
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+  }
+  
+  .card p {
+    margin-top: 6px;
+    color: #858997;
+    font-size: 0.9rem;
+    letter-spacing: 0.3px;
+  }
+  
+
+ 
+  .card .content:hover::after {
+    width: 100%;
+  }
+  .card1::before{
+    content:"Before Content";
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    transition: all 0.25s;
+
+  }
+  .card1:hover:before{
+    color: #c93a65;
+  }
+  
+  
+  .card1 a::before {
+    content: "";
+    position: absolute;
+   
+    left: 0;
+    
+    margin-bottom: 5px;
+    /*   right: 0; bottom: 0; Animate from right side */
+    height: 4px;
+    background-color: #5351fb;
+    width: 0%;
+    transition: width 0.25s;
+  }
+  .card1 a:hover::before {
+    width: 100%;
+  }
+  /* Card 2 */
+  .card2::after{
+    content:"After Content";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    transition: all 0.25s;
+
+  }
+  .card2:hover:after{
+    color: #1cc024;
+  }
+ 
+  .card2 .content::after {
+    content: "";
+    position: absolute;
+   
+   right: 0;
+ 
+  
+    height: 4px;
+    background-color: #c93a65;
+    width: 0%;
+    transition: width 0.25s;
+  }
+  
+  .card3  .square{
+    
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 3px;
+    position: absolute;
+    top:60%;
+    left: 50%;
+    background-color: #5351fb;
+    height: 20px;
+    width: 25px;
+    transition: all 0.35s;
+
+  }
+  .card3:hover .square{
+   
+    left: 10%;
+    top:10%;
+    width: 80%;
+    
+    background-color: #d37c35;
+  }
